@@ -7,8 +7,10 @@
 <body>
    <form>
        <label for="CEP">CEP:
-            <input name="CEP" id="CEP"  required pattern="\d{5}-?\d{3}"/>           
+            <input name="CEP" id="CEP"  required pattern="\d{5}-?\d{3}" onchange="javascript:console.log('change')" />         
+            <input name="CEP" id="CEP2"  required pattern="\d{5}-?\d{3}" oninput="javascript:console.log('input')" />          
        </label>
+       <input type="submit" value="EnviarNoVal" formnovalidate/>
        <input type="submit" value="Enviar" />
    </form>
 </body>

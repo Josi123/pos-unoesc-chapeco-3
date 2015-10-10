@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aula - HTML5</title>
+    <meta charset="utf-8">
+    <script src="cpf.js"></script>
+    <script type="text/javascript">
+        function vCPF(input){
+            var mensagem ="";
+            if(!validaCPF(input.value)){
+                mensagem ="CPF Invalido!";
+            }
+            input.setCustomValidity(mensagem);
+        }
+    </script>
+</head>
+<body>
+   <form>
+       <label for="CPF">CPF:    
+            <input name="CPF" id="CPF"  required oninput="javascript:vCPF(this)" />          
+       </label>
+       <input type="submit" value="Enviar" />
+   </form>
+</body>
+</html>

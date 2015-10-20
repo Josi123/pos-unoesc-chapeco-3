@@ -44,12 +44,58 @@ div {
 }
 ```
 ### Referencia:
-[Animation](http://www.w3schools.com/cssref/css3_pr_animation.asp)
-[Keyframe](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
+####
+[Animation](http://www.w3schools.com/cssref/css3_pr_animation.asp),
+[Keyframe](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp),
 [CSS3 Animations](http://www.w3schools.com/css/css3_animations.asp)
 
+##### Funcionalidade: calc()
+##### O que é?
+é uma função que executa um determinado calculo matemático para determinar o valor de uma propriedade.
+##### Onde usar:
+Em qualquer lugar onde um número é requisitado.
+##### Como usar:
+```css
+calc(expression)
+```
+##### Exemplo de uso
+um exemplo de sintaxe atuando sobre uma div, definindo o width atravez da expressão.
 
+```css
+div {
+    /* property: calc(expression) */
+	width: calc(100% / 2);
+}
+```
+### Referencia:
+[Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
+##### Funcionalidade: @font-face
+##### O que é?
+permite adicionar uma fonte criada pelo programador, para ser utilizada na página assim permitindo a utilização de fontes fora do "web-safe".
+##### Onde usar:
+Em qualquer lugar que utilize escrita.
+##### Como usar:
+```css
+@font-face {
+	descritivo: valor;
+	descritivo: valor;
+	...
+	}
+```
+##### Exemplo de uso
+
+```css
+@font-face {
+	font-family: "RegencyScriptFLF Regular";
+	src: url("http://site/fontes/RegencyScriptFLF-Regular.ttf");
+	}
+
+p { font-family: "RegencyScriptFLF Regular", Cursive; }
+```
+### Referencia:
+[@Font-Face](http://www.w3schools.com/css/css3_fonts.asp), 
+[@Font-Face](http://www.maujor.com/tutorial/css3-@font-face.php)
 
 
 

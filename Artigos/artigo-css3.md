@@ -2,33 +2,55 @@
 #### Pós-graduação em Desenvolvimento Web, Cloud e dispositivos móveis - WebMob
 #### Disciplina: HTML5+CSS3
 #### Professor: Jean Carlo Nascimento
-#### Acadêmico(a): Bla Bla Bla Bla
+#### Acadêmico(a): Juliano Gustavo Hermes
 ### Artigo de revisão de CSS3
-##### Funcionalidade: border-radius
+##### Funcionalidade: Animations
 ##### O que é?
-A propriedade CSS3 border-radius destina-se a definir bordas arredondadas. O arredondamento das bordas é feito com declaração de dois valores CSS de medida; o primeiro define o eixo horizontal (rx) de 1/4 de uma elipse e o segundo o eixo vertical (ry). O quarto de elipse assim definida é convenientemente inserida no canto vivo do box arredondando-o. O diagrama a seguir esclarece o esquema de arredondamento.
+São mudanças de estado de um objeto na página, essas mudanças podem ser de cor, tamanho, posição. As transições podem ocorrer tantas vezes quanto for especificado. O principal foco da animação é realizar a mesma em um período de tempo, assim executando a tranisação como um animação e não como um degrau de mudança.
 ##### Onde usar:
-Em qualquer elemento que possui o atributo border.
+Em qualquer elemento.
 ##### Como usar:
+Antes da utilização do atributo animation é necessária a declaração do Keyframe que define a animação a ser executada.
 ```css
-seletor {border-radius:
-[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?);
-}
+@keyframes animationname {keyframes-selector {css-styles;}}
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
 ```
 ##### Exemplo de uso
-A sintaxe geral para aplicar borda arredondada é mostrada a seguir.
+um exemplo de sintaxe atuando sobre uma div, executando a troca de valor do atributo background-color.
 
 ```css
-seletor {
-  border-top-left-radius: rx ry;
-  border-top-right-radius: rx ry;
-  border-bottom-right-radius: rx ry;
-  border-bottom-left-radius: rx ry;
+/* Chrome, Safari, Opera */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation:example 1s linear infinite;
+	animation:example 1s linear infinite;
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    50%  {background-color: yellow;}
+    100% {background-color: red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red;}
+    50%  {background-color: yellow;}
+    100% {background-color: red;}
+}
 ```
 ### Referencia:
-[http://www.maujor.com/tutorial/interativo-css3/inc/borderradius.php](http://www.maujor.com/tutorial/interativo-css3/inc/borderradius.php)
+[Animation](http://www.w3schools.com/cssref/css3_pr_animation.asp)
+[Keyframe](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
+[CSS3 Animations](http://www.w3schools.com/css/css3_animations.asp)
+
+
+
+
 
 
 http://www.noupe.com/essentials/freebies-tools-templates/css3-exciting-functions-and-features-30-useful-tutorials.html

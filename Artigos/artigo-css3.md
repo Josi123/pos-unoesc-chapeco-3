@@ -45,15 +45,15 @@ div {
 ```
 ### Referencia:
 ####
-[Animation](http://www.w3schools.com/cssref/css3_pr_animation.asp),
-[Keyframe](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp),
-[CSS3 Animations](http://www.w3schools.com/css/css3_animations.asp)
+[w3schools.com Animation](http://www.w3schools.com/cssref/css3_pr_animation.asp),
+[w3schools.com Keyframe](http://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp),
+[w3schools.com CSS3 Animations](http://www.w3schools.com/css/css3_animations.asp)
 
 ##### Funcionalidade: calc()
 ##### O que é?
 é uma função que executa um determinado calculo matemático para determinar o valor de uma propriedade.
 ##### Onde usar:
-Em qualquer lugar onde um número é requisitado.
+Em qualquer propriedade onde um número é requisitado.
 ##### Como usar:
 ```css
 calc(expression)
@@ -68,20 +68,20 @@ div {
 }
 ```
 ### Referencia:
-[Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+[developer.mozilla.org Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
 ##### Funcionalidade: @font-face
 ##### O que é?
-permite adicionar uma fonte criada pelo programador, para ser utilizada na página assim permitindo a utilização de fontes fora do "web-safe".
+permite adicionar uma fonte estilizada, para ser utilizada na página assim permitindo a utilização de fontes fora do "web-safe".
 ##### Onde usar:
-Em qualquer lugar que utilize escrita.
+Em qualquer elemento que utilize escrita.
 ##### Como usar:
 ```css
 @font-face {
 	descritivo: valor;
 	descritivo: valor;
 	...
-	}
+}
 ```
 ##### Exemplo de uso
 
@@ -94,9 +94,126 @@ Em qualquer lugar que utilize escrita.
 p { font-family: "RegencyScriptFLF Regular", Cursive; }
 ```
 ### Referencia:
-[@Font-Face](http://www.w3schools.com/css/css3_fonts.asp), 
-[@Font-Face](http://www.maujor.com/tutorial/css3-@font-face.php)
+[w3schools.com @Font-Face](http://www.w3schools.com/css/css3_fonts.asp), 
+[maujor.com @Font-Face](http://www.maujor.com/tutorial/css3-@font-face.php)
 
+##### Funcionalidade: @media
+##### O que é?
+é uma delimitação a respeito do tipo de media utilizada, habilitando alterações na visualização de acordo com os delimitadores utilizados.
+##### Onde usar:
+na definição de visualização especificas para determinadas midias e resoluções.
+##### Como usar:
+```css
+@media not|only mediatype and (expressions) {
+    CSS-Code;
+}
+```
+
+##### Exemplo de uso
+
+```css
+@media screen and (max-width: 480px) {
+    div{
+        width:100px;
+    }
+}
+```
+### Referencia:
+[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries), 
+[w3schools.com](http://www.w3schools.com/css/css3_mediaqueries.asp)
+
+##### Funcionalidade: multiplos backgrounds
+##### O que é?
+A partir do CSS3 novas propriedades foram adicionadas permitindo multiplas imagens de fundo, entre outras.
+##### Onde usar:
+em qualquer elemento que possua background.
+##### Como usar:
+```css
+seletor {
+  background: background1, background 2, ..., backgroundN;
+}
+```
+
+##### Exemplo de uso
+
+```css
+div {
+    background-image: url(img01.gif), url(img02.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+```
+### Referencia:
+[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Using_CSS_multiple_backgrounds), 
+[w3schools.com](http://www.w3schools.com/css/css3_backgrounds.asp)
+
+##### Funcionalidade: text-shadow
+##### O que é?
+é a aplicação de uma sombra sobre o texto existente no seletor.
+##### Onde usar:
+em um seletor que possua um texto.
+##### Como usar:
+```css
+seletor { 
+	text-shadow: offsetX offsetY raioBlur cor [,offsetX offsetY raioBlur cor]*; 
+} 
+```
+
+##### Exemplo de uso
+
+```css
+div { 
+	text-shadow: 10px -10px 10px black; 
+} 
+```
+### Referencia:
+[maujor.com](http://www.maujor.com/tutorial/interativo-css3/inc/textshadow.php)
+
+##### Funcionalidade: box-shadow
+##### O que é?
+é a aplicação de uma sombra sobre o corpo do seletor.
+##### Onde usar:
+em um seletor qualquer.
+##### Como usar:
+```css
+seletor { 
+	box-shadow: inset offsetX offsetY raioBlur spread cor;
+} 
+```
+
+##### Exemplo de uso
+
+```css
+div {
+    box-shadow: 10px 10px grey;
+}
+```
+### Referencia:
+[maujor.com](http://www.maujor.com/tutorial/interativo-css3/inc/boxshadow.php),
+[w3schools.com](http://www.w3schools.com/css/css3_shadows.asp)
+
+##### Funcionalidade: border-image
+##### O que é?
+consiste na utilização de uma imagem padrão para ser utilizada como borda do seletor especificado, definindo, além da imagem, o ponto de corte e o modo de prenchimento da borda. 
+##### Onde usar:
+em um seletor qualquer.
+##### Como usar:
+```css
+seletor{
+	border-image: source slice width outset repeat|initial|inherit;
+}
+```
+
+##### Exemplo de uso
+
+```css
+div {
+    border-image: url(image1.png) 5 round;
+}
+```
+### Referencia:
+[css-tricks.com](https://css-tricks.com/understanding-border-image/),
+[w3schools.com](http://www.w3schools.com/css/css3_border_images.asp)
 
 
 http://www.noupe.com/essentials/freebies-tools-templates/css3-exciting-functions-and-features-30-useful-tutorials.html

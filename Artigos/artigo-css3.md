@@ -215,6 +215,42 @@ div {
 [css-tricks.com](https://css-tricks.com/understanding-border-image/),
 [w3schools.com](http://www.w3schools.com/css/css3_border_images.asp)
 
+##### Funcionalidade: Counter
+##### O que é?
+Cria um contador para contabilizar quantas vezes a regra do css foi executada, pondendo retornar esse valor para o elemento.
+##### Onde usar:
+em um seletor qualquer.
+##### Como usar:
+função de incremento
+```css
+seletor{
+	counter-increment: none|id|initial|inherit;
+}
+```
+função de reset do contador
+```css
+seletor{
+	counter-reset: none|name number|initial|inherit;
+}
+```
+
+##### Exemplo de uso
+
+```css
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " "; 
+}
+```
+### Referencia:
+[developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters),
+[w3schools.com counter-reset](http://www.w3schools.com/cssref/pr_gen_counter-reset.asp),
+[w3schools.com counter-increment](http://www.w3schools.com/cssref/pr_gen_counter-increment.asp)
+
 
 http://www.noupe.com/essentials/freebies-tools-templates/css3-exciting-functions-and-features-30-useful-tutorials.html
 http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use/

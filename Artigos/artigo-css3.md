@@ -3,6 +3,7 @@
 #### Disciplina: HTML5+CSS3
 #### Professor: Jean Carlo Nascimento
 #### Acadêmico(a): Juliano Gustavo Hermes
+#### E-mail: {j.hermes09@gmail.com}
 ### Artigo de revisão de CSS3
 ##### Funcionalidade: Animations
 ##### O que é?

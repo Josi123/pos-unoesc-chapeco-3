@@ -3,6 +3,7 @@
 #### Disciplina: HTML5+CSS3
 #### Professor: Jean Carlo Nascimento
 #### Acadêmico(a): Juliano Gustavo Hermes
+#### E-mail: {j.hermes09@gmail.com}
 ## Atomic Design
 #####Resumo:
 Atomic Design é uma metodologia, proposta por Brad Frost, com o objetivo de facilitar o desenvolvimento do front-end de sites e sistemas web.</br>
@@ -44,10 +45,15 @@ para facilitar o desenvolvimento de sistemas e a reutilização desses orgânism
 #####4) Onde usar?
 por ser uma metodologia de design pode ser aplicada á qualquer criação desse tipo, entretanto teve sua criação voltada para design em sites e sistemas web.
 #####5) Exemplos:
+######Átomo:
 <img src="http://bradfrost.com/wp-content/uploads/2013/06/atoms.jpg">
+######Molécula:
 <img src="http://bradfrost.com/wp-content/uploads/2013/06/molecule.jpg">
+######Orgânismo:
 <img src="http://bradfrost.com/wp-content/uploads/2013/06/organism2.jpg">
+######Template:
 <img src="http://bradfrost.com/wp-content/uploads/2013/06/template1.jpg">
+######Página:
 <img src="http://bradfrost.com/wp-content/uploads/2013/06/page1.jpg">
 
 #####6) Referências

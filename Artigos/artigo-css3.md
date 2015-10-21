@@ -251,6 +251,128 @@ li::before {
 [w3schools.com counter-reset](http://www.w3schools.com/cssref/pr_gen_counter-reset.asp),
 [w3schools.com counter-increment](http://www.w3schools.com/cssref/pr_gen_counter-increment.asp)
 
+##### Funcionalidade: rotate
+##### O que é?
+executa uma rotação no objeto de acordo com o angulo definido e a função, podendo executar rotações nos eixos x, y e z. A função rotate se executa por meio do propriedade transform.
+##### Onde usar:
+em um seletor qualquer.
+##### Como usar:
+```css
+seletor{
+	transform: rotate(angle); /* Rotação 2D */
+	transform: rotate3d(x,y,z,angle); /* Rotação 3D */
+	transform: rotateX(angle); /* Rotação 3D pelo eixo X*/
+	transform: rotateY(angle); /* Rotação 3D pelo eixo Y*/
+	transform: rotateZ(angle); /* Rotação 3D pelo eixo Z*/
+}
+```
 
-http://www.noupe.com/essentials/freebies-tools-templates/css3-exciting-functions-and-features-30-useful-tutorials.html
-http://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use/
+##### Exemplo de uso
+exeplo utilizando rotateX
+```css
+div {
+    transform: rotateX(45deg);
+}
+```
+### Referencia:
+[w3schools.com Propriedades transform](http://www.w3schools.com/cssref/css3_pr_transform.asp),
+[w3schools.com 3d transform](http://www.w3schools.com/css/css3_3dtransforms.asp)
+
+##### Funcionalidade: perspective
+##### O que é?
+utilizado em conjunto com as transformações 3d. Quando aplicadas essas transformações no child do seletor posibilita que a aplicação do 3d gere uma perspectiva do seletor child em relação ao seletor.
+##### Onde usar:
+em um seletor que possua um child com um efeito transform por exemplo rotate.
+##### Como usar:
+```css
+seletor{
+	perspective: length|none;
+}
+```
+
+##### Exemplo de uso
+exeplo utilizando rotateX com perspective
+```css
+.container{
+	perspective: 150px;
+}
+.container>div {
+    transform: rotateX(45deg);
+}
+```
+### Referencia:
+[w3schools.com](http://www.w3schools.com/cssref/css3_pr_perspective.asp)
+
+##### Funcionalidade: gradient
+##### O que é?
+executa uma definição de gradiente podendo ser radial ou linear, definido com n cores.
+##### Onde usar:
+utilizado na propriedade background do seletor.
+##### Como usar:
+```css
+seletor{
+	background: radial-gradient(shape size at position, start-color, ..., last-color);
+}
+seletor{
+	background: linear-gradient(direction, color-stop1, color-stop2, ...);
+}
+```
+
+##### Exemplo de uso
+exeplo utilizando rotateX com perspective
+```css
+div{
+	background: repeating-linear-gradient(to right, black 10%, gray 30%, black 50%);
+}
+```
+### Referencia:
+[w3schools.com](http://www.w3schools.com/css/css3_gradients.asp)
+
+##### Funcionalidade: columns
+##### O que é?
+realiza a quebra do texto contido em um determinado seletor, podendo especificar tamanho das colunas, divisor, quantidade de colunas, espaço entre colunas entre outras especificidades.
+##### Onde usar:
+em um seletor que possua texto.
+##### Como usar:
+existem varias propriedades separadas para cada elemento da coluna sendo esses
+column-count
+```css
+seletor{
+	-webkit-column-count: number;
+}
+```
+column-gap
+```css
+seletor{
+	-webkit-column-count: lenght;
+}
+```
+column-rule
+```css
+seletor{
+	-webkit-column-rule: width style color;
+}
+```
+column-span
+```css
+seletor{
+	-webkit-column-span: 1|all|initial|inherit;
+}
+```
+column-width
+```css
+seletor{
+	-webkit-column-width: width;
+}
+```
+
+##### Exemplo de uso
+```css
+div {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 90px;
+    -webkit-column-rule: 1px dashed gray;
+}
+```
+### Referencia:
+[w3schools.com](http://www.w3schools.com/css/css3_multiple_columns.asp)
